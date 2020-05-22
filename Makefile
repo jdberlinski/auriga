@@ -1,9 +1,11 @@
 .PHONY: main clean FORCE
 
-main: p.pdf p-notes.pdf
+all: main FORCE clean
+
+main: presentation.pdf
 
 %.pdf: FORCE
-	latexmk -pdflatex='lualatex -interaction nonstopmode' -pdf $(patsubst %.pdf,%.tex,$@)
+	latexmk -pdflatex='xelatex' -pdf $(patsubst %.pdf,%.tex,$@)
 
 clean:
-	latexmk -pdf -C
+	latexmk -pdf -c
