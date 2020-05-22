@@ -2,6 +2,13 @@
 
 Auriga is a minimalist LaTex [beamer] presentation theme.
 
+## Changes:
+* [XeTeX](xetex.sourceforge.net) instead of LuaTeX
+* [JetBrains Mono](hhtps://www.jetbrains.com/lp/mono/) instead of Hack
+* Lato in title instead of Raleway
+* Removed notes files
+* `make` now cleans auxiliary files
+
 <p align="center">
 <a href="https://raw.githubusercontent.com/anishathalye/auriga/assets/auriga.pdf">
 <img src="https://raw.githubusercontent.com/anishathalye/auriga/assets/auriga.png">
